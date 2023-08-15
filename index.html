@@ -1,166 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head class="head">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi hoja de vida</title>
-        <link rel="stylesheet" href="css/styles.css"> <!-- coneccion entre hoja de estilo y el codigo-->
-        <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
-    </head>
-    <body class="body">
-     <!-- contenedor principal  -->
-        <div class="contenedor-principal"> 
-            <!-- Informacion general -->
-            <div class="informacion-general">
-                <!-- Descripcion -->
-                <div class="descripcion">
-                    <h2 class="descripcion-profesion"> Front-End Developer</h2>
-                    <h1 class="nombre">Carlos Pugliese</h1>
-                    <p class="texto-descripcion">
-                        Perfil Operativo capaz de concebir nuevas alternativas con eficiencia 
-                        para adquirir nuevos conocimientos en el campo laboral en diferentes áreas funcionales,
-                        con la capacidad de desarrollar cualquier cargo en el ámbito de sistemas, con excelentes 
-                        valores como la honestidad, moralidad, responsabilidad, solidaridad.  
-                    </p>
-                </div>
-                <!-- Proyectos -->
-                <div class="proyectos">
-                    <h3 class="titulo-seccion-principal">Proyectos</h3>
-                        <ol class="lista-proyectos"> <!--Etiqueta de lista ordenada-->
-                            <li> 
-                                <a class="enlace-proyectos" href="https://barbershop.goit.global/">https://barbershop.goit.global/ </a> 
-                            <span class="puntos-proyectos">..... </span>
-                            <span>[ HTML5, CSS3 ]</span> <!--span= dar estilo a una fuente-->
-                            </li>
-                            <li> 
-                                <a class="enlace-proyectos" href="https://cryptohub.goit.global/">https://cryptohub.goit.global/ </a>
-                                <span class="puntos-proyectos">...... </span>
-                                <span>[ JavaScript ]</span>
-                            </li>
-                            <li> 
-                                <a class="enlace-proyectos" href="https://kidslike.goit.global/" class="imagen"> https://kidslike.goit.global/ </a> 
-                                <span class="puntos-proyectos">......... </span>
-                                <span>[ React.js, Node.js ]</span> 
-                            </li>
-                        </ol>
-                </div>
-                <!-- Experiencia laboral -->
-                <div class="experiencia-laboral">
-                        <h3 class="titulo-seccion-principal">Experiencia laboral</h3>
-                        <!-- Experiencia 1 -->
-                        <div  class="experiencia-1">
-                            <h4 class="puesto-empresa">Técnico instalador - <span class="texto-naranja">Applus Norcontrol </span></h4>
-                            <p class="periodo-experiencia">Diciembre 2014 - Febrero 2015   |   Colombia</p>
-                            <ul class="lista-experiencia"> <!--Etiqueta lista no ordenada-->
-                                <li>
-                                    Hacer diseños de enrutamiento de la fibra optica a nivel nacional. 
-                                </li>
-                                <li>
-                                    ir al sitio y verificar que la infraestructura sea apta para el uso.
-                                </li>  
-                                <li>
-                                    realizar diseño de ruta interior del sitio de instalacion. 
-                                </li>
-                                <li>
-                                    Validar informacion suministrada por el cliente. 
-                                </li>
-                            </ul>          
-                        </div>
-                        <!-- Experiencia 2 -->
-                        <div>
-                            <h4 class="puesto-empresa">Técnico instalador - <span class="texto-naranja">Applus Norcontrol</span></h4>
-                            <p class="periodo-experiencia">Marzo 2015 - Abril 2016   |   Barranquilla</p>
-                            <ul class="lista-experiencia">
-                                <li>
-                                    Verificar diseños de enrutamiento de la fibra optica y coaxual en barranquilla. 
-                                </li>
-                                <li>
-                                    ir al sitio y verificar que la infraestructura sea apta para el uso.
-                                </li>  
-                                <li>
-                                    Verificar diseño de ruta al exterior e interior del sitio de instalacion. 
-                                </li>
-                                <li>
-                                    Verificar estado de la infraestructura 
-                                </li>
-                            </ul>          
-                        </div>
-                        <!-- Experiencia 3 -->
-                        <div>
-                            <h4 class="puesto-empresa">Tecnico en redes de computo y camaras -  <span class="texto-naranja">Soluciones Pugliese</span></h4>
-                            <p class="periodo-experiencia">enero 2018 - Hasta ahora  |   Bogotá</p>
-                            <ul class="lista-experiencia">
-                                <li>Ensable y mantenimiento de computadoras y servidores.</li>
-                                <li>Instalacion de sistemas Operativos.</li>
-                                <li>Instalacion y verificacion de redes de ofimatica.</li>
-                                <li>instalacion y mantenimientos de sistemas de camaras </li>
-                            </ul>
-                        </div>
-                </div>
-                <!-- Educacion -->
-                <div>
-                    <!-- Estudio 1 -->
-                        <h3 class="titulo-seccion-principal"> Educacion</h3>
-                        <div>
-                            <h4 class="nombre-universidad"><span class="texto-naranja">Universidad Autonoma del caribe</span> </h4>
-                            <h5 class="nombre-carrera">Ingenieria electronica</h5>
-                            <p class="periodo-experiencia">Junio 2006 - Diciembre 2006   |   Barranquilla</p>
-                        </div>
-                        <!-- Estudio 2 -->
-                        <div>
-                            <h4 class="nombre-universidad"><span class="texto-naranja">Coorporacion Universitaria Americana</span> </h4>
-                            <h5 class="nombre-carrera">Ingenieria de sistemas </h5>
-                            <p class="periodo-experiencia">Enero 2014 - Junio 2016   |   Barranquilla</p>
-                        </div>
-                        <!-- Estudio 3 -->
-                        <div>
-                            <h4 class="nombre-universidad"><span class="texto-naranja">GoIT</span> </h4>
-                            <h5 class="nombre-carrera">Desarrollo web fullstack </h5>
-                            <p class="periodo-experiencia">Mayo 2022 - Octubre 2022   |   Bogotá</p>
-                        </div>
-                </div>
-            </div>
-                <!-- Informaion secundaria -->
-            <aside class="informacion-lateral"> <!--Contenedor contenido secundario a un lado-->
-                <img src="./Imagenes/IMG-20190728-WA0005.jpg" alt="Mi foto de perfil" class="imagen"> <!--src= enlace de la foto - alt= texto descriptivo de la imagen - width= restringir tamaño a la foto-->
-                <!-- Contactos -->
-                <div class="contactos">
-                    <h3 class="titulo-lateral"> Contactos</h3>
-                    <div>
-                        <span class="tipo-contactos">C:</span>
-                        <a class="contacto-info" href="Tel:+57 301 255 14 99">+57 301 255 14 99</a>
-                    </div>
-                    <div>
-                        <span class="tipo-contactos">E;</span>
-                        <a class="contacto-info" href="Mailto:pugliese8725@gmail.com">Pugliese8725@gmail.com</a>
-                    </div>  
-                </div>
-                    <!-- Habilidades tecnicas -->
-                    <div class="habilidades-tecnicas">
-                        <h3 class="titulo-lateral">Tech skill</h3>
-                        <ul class="lista-lateral">
-                            <li><span class="elemento-lista-lateral">HTML5</span></li>
-                            <li><span class="elemento-lista-lateral">CSS3</span></li>
-                            <li><span class="elemento-lista-lateral">GIT</span></li>
-                            <li><span class="elemento-lista-lateral">WebPack</span></li>
-                            <li><span class="elemento-lista-lateral">JavaScript</span></li>
-                            <li><span class="elemento-lista-lateral">React.js</span></li>
-                            <li><span class="elemento-lista-lateral">Node.js</span></li>   
-                            </ul>
-                    </div>
-                    <!-- Habilidades Blandas  -->
-                    <div class="habilidades-blandas">
-                        <h3 class="titulo-lateral">Habilidades Blandas</h3>
-                        <ul class="lista-lateral">
-                            <li><span class="elemento-lista-lateral">Scrum</span></li>
-                            <li><span class="elemento-lista-lateral">Agile</span></li>
-                            <li><span class="elemento-lista-lateral">GTD</span></li>
-                            <li><span class="elemento-lista-lateral">Teamwork</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-        </div> 
-    </body>
+	<head class="head">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mi hoja de vida</title>
+		<link rel="stylesheet" href="css/styles.css"> <!-- coneccion entre hoja de estilo y el codigo-->
+		<link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+	</head>
+	<body class="body">
+		<!-- contenedor principal  -->
+		<div class="contain"> 
+			<!-- Informaion secundaria -->
+			<section class="contain__contact features"> <!--Contenedor contenido secundario a un lado-->
+        <div class="feature__cont-img">
+          <img class="features__img" src="./Imagenes/IMG-20190728-WA0005.jpg" alt="Mi foto de perfil" > 
+        </div>
+				<!--src= enlace de la foto - alt= texto descriptivo de la imagen - width= restringir tamaño a la foto-->
+				<!-- Contactos -->
+				<div class="features__contacts">
+					<h3 class="features__tytle"> Contactos </h3>					
+					<ul class="lista-lateral ">
+						<li class="features__item">
+							<svg 
+								xmlns="http://www.w3.org/2000/svg" 
+								xmlns:xlink="http://www.w3.org/1999/xlink" 
+								width="15px" 
+								height="15px" 
+								viewBox="0 0 512 512">
+								<g>
+								<path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+									s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+									c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+									c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+									c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+									c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+									c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z"
+								/>
+							</svg>
+
+							<span class="elemento-lista-lateral">+57 301 255 14 99</span>
+						</li>
+						<li class="features__item">
+							<svg 
+								xmlns="http://www.w3.org/2000/svg" 
+								xmlns:xlink="http://www.w3.org/1999/xlink" 
+								width="15px" 
+								height="15px" 
+								viewBox="0 0 512 512" 
+								style="enable-background:new 0 0 512 512;" 
+							>
+							<g>
+								<g>
+									<path d="M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,256,256c141.391,0,256-114.609,256-256
+										C512,114.609,397.391,0,256,0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472
+										z"/>
+									<path d="M315.844,198.359c0.172-1.109,0.25-2.141,0.25-3.094c0-8.797-5.5-13.172-16.5-13.172c-5.281,0-8.844,0.906-10.688,2.688
+										c-1.875,1.812-3.156,5.391-3.906,10.75c-4.219-5.938-8.469-9.938-12.75-12.016c-3.938-1.891-9.578-2.828-16.875-2.828
+										c-18.797,0-35.109,9.562-48.875,28.672c-12.688,17.578-19.016,36.359-19.016,56.329c0,15.594,4.109,29.28,12.344,41.094
+										c9.125,13.016,21.062,19.516,35.766,19.516c12.594,0,24.688-4.516,36.266-13.547c5.22,9.031,14.142,13.547,26.734,13.547
+										c23.844,0,44.267-10.062,61.219-30.203C375.938,276.938,384,254.906,384,230.031c0-29.75-12.516-54.562-37.547-74.422
+										C323.266,137.219,296.75,128,266.844,128c-38.906,0-71.562,12.297-98.016,36.906C141.609,190.281,128,222.656,128,262.062
+										c0,40.266,13.953,71.188,41.828,92.78C194.859,374.297,227.688,384,268.344,384c17.312,0,34.188-2.703,50.656-8.141
+										c18.062-5.922,32.922-14.359,44.594-25.297c3.767-3.609,7.392-8,10.828-13.156c4.297-6.297,6.422-11.375,6.422-15.234
+										c0-2.922-1.016-5.531-3.078-7.828c-2.047-2.281-4.516-3.422-7.358-3.422c-5.392,0-9.922,1.906-13.625,5.672
+										c-6.109,6.562-10.656,11.562-13.595,15c-20,17.469-44.844,26.203-74.594,26.203c-31.906,0-57.438-7.828-76.578-23.484
+										c-20.922-17.108-31.375-41.625-31.375-73.53c0-30.969,9.938-56.844,29.859-77.625C210.406,162.391,235.484,152,265.703,152
+										c23.781,0,43.547,6.75,59.328,20.281c16.906,14.344,25.328,33.438,25.328,57.25c0,12.469-2.125,24.094-6.422,34.828
+										c-4.781,12.047-11.72,21.328-20.781,27.858c-6.812,4.892-12.142,7.345-16,7.345c-4.203,0-6.297-1.97-6.297-5.922
+										c0-1.642,1.078-9.203,3.281-22.72L315.844,198.359z M267.344,269.578c-7.734,21.453-15.969,32.188-24.688,32.188
+										c-13.031,0-19.547-8.312-19.547-24.953c0-12.922,3.734-27.469,11.234-43.688c8.734-19.141,18.672-28.703,29.845-28.703
+										c4.625,0,8.062,2.5,10.328,7.484c1.844,3.812,2.766,8.344,2.766,13.594C277.281,236.719,273.984,251.406,267.344,269.578z"/>
+								</g>
+							</svg>
+							<span class="elemento-lista-lateral">Pugliese8725@gmail.com</span>
+						</li>
+						<li class="features__item">
+							<a class="features__svg" href="https://www.linkedin.com/in/carlos-pugliese-7ab33a148/">
+								<svg 
+									enable-background="new 0 0 512 512" 
+									viewBox="0 0 512 512" 
+									xmlns="http://www.w3.org/2000/svg" 
+									width="15px" 
+									height="15px"
+									xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<path d="M259,507.2C120.4,507.9,6.7,392.7,9.9,252.1c3-134,114.1-245,252.4-243.4c136.6,1.6,249.4,115.4,245.8,256   C504.7,398.1,394.7,507.8,259,507.2z M40.2,258.2C41.3,383.5,142.6,479.8,262.4,478c116.2-1.8,215.2-96.4,215.3-220   c0-125.2-102.1-222-222.2-220C139.1,39.9,41,134.7,40.2,258.2z"/>
+										<path d="M326.6,375.6c0-2.2,0-4.1,0-6.1c0-26.7,0.1-53.3-0.1-80c0-4.6-0.4-9.4-1.5-13.8c-3.6-14.8-15.6-22.2-32.9-20.8   c-12.8,1-24.3,12.4-25.2,25.6c-0.6,8-0.4,16-0.5,24c-0.1,21.7,0,43.3,0,65c0,2,0,3.9,0,6.2c-16.2,0-32,0-48.1,0   c0-52,0-104.1,0-156.4c15.7,0,31.4,0,47.7,0c0,6.1,0,12.3,0,19.8c1.7-2,2.7-3,3.4-4.2c21.6-32.4,80.2-28.9,97.6,9.3   c4.8,10.6,7.7,21.7,7.8,33.3c0.3,32.1,0.2,64.3,0.2,96.5c0,0.5-0.1,1-0.3,1.8C358.9,375.6,343,375.6,326.6,375.6z"/>
+										<path d="M187.5,375.8c-16.1,0-31.7,0-47.7,0c0-51.9,0-103.6,0-155.6c15.9,0,31.6,0,47.7,0C187.5,271.9,187.5,323.6,187.5,375.8z"/>
+										<path d="M162.2,189c-14.3-0.1-24.3-10.5-24.2-24.9s10.5-24.3,25.4-24.2c14.2,0.1,24.5,10.6,24.3,24.9   C187.7,179,177,189.1,162.2,189z"/>
+									</g>
+								</svg>
+							</a>
+							<span class="elemento-lista-lateral">carlos-pugliese</span>
+						</li>
+						<li class="features__item">
+							<a class="features__svg" href="https://github.com/Pugli87">
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									xmlns:xlink="http://www.w3.org/1999/xlink" 
+									width="15px" 
+									height="15px" 
+									viewBox="0 0 475.084 475.084" 
+									style="enable-background:new 0 0 475.084 475.084;"
+									xml:space="preserve">
+									<g>
+									<g>
+										<path d="M436.244,146.752c5.14-15.422,7.713-31.409,7.713-47.967c0-22.08-4.859-42.828-14.564-62.242
+											c-20.362,0-38.349,3.715-53.961,11.136c-15.604,7.423-33.4,18.938-53.379,34.545c-25.122-6.09-51.777-9.135-79.941-9.135
+											c-30.837,0-60.245,3.333-88.223,9.994c-20.364-15.99-38.351-27.74-53.959-35.26c-15.608-7.52-33.689-11.279-54.247-11.279
+											c-9.707,19.414-14.56,40.163-14.56,62.242c0,16.751,2.568,32.93,7.708,48.535C12.942,177.587,0,215.272,0,260.383
+											c0,39.595,5.898,71.092,17.701,94.507c6.283,12.367,14.465,23.312,24.554,32.832c10.085,9.514,21.601,17.228,34.545,23.13
+											c12.946,5.896,25.981,10.801,39.116,14.699c13.134,3.9,27.646,6.758,43.54,8.559c15.893,1.816,29.93,3.004,42.111,3.579
+											c12.181,0.564,25.693,0.853,40.544,0.853c17.508,0,33.396-0.432,47.678-1.283c14.277-0.855,30.594-2.953,48.964-6.276
+											c18.367-3.333,34.547-7.857,48.54-13.565c13.99-5.708,27.412-13.895,40.259-24.551c12.847-10.663,22.884-23.318,30.121-37.976
+											c11.604-23.603,17.412-55.107,17.412-94.507C475.078,215.082,462.135,177.206,436.244,146.752z M401.995,354.455
+											c-6.092,12.471-13.802,22.265-23.127,29.41c-9.329,7.139-20.938,12.847-34.831,17.135c-13.9,4.281-27.217,7.087-39.971,8.415
+											c-12.758,1.334-26.933,1.998-42.545,1.998h-47.966c-15.607,0-29.79-0.664-42.541-1.998c-12.752-1.328-26.075-4.134-39.971-8.415
+											c-13.891-4.288-25.5-9.996-34.829-17.135c-9.329-7.146-17.037-16.939-23.128-29.41c-6.09-12.471-9.136-27.076-9.136-43.824
+											c0-22.847,6.567-42.264,19.702-58.245c13.134-15.99,30.929-23.982,53.387-23.982c8.188,0,26.746,1.997,55.677,5.995
+											c13.513,2.093,28.456,3.14,44.823,3.14c16.372,0,31.313-1.044,44.824-3.14c29.317-3.999,47.869-5.995,55.678-5.995
+											c22.457,0,40.252,7.996,53.386,23.982c13.135,15.988,19.698,35.398,19.698,58.245
+											C411.125,327.382,408.079,341.995,401.995,354.455z"/>
+										<path d="M166.875,265.52c-5.806-6.475-12.703-9.712-20.699-9.712c-7.998,0-14.896,3.241-20.701,9.712
+											c-5.802,6.468-9.897,13.703-12.275,21.689c-2.383,8.002-3.571,15.804-3.571,23.422c0,7.61,1.191,15.413,3.571,23.414
+											c2.375,7.991,6.468,15.222,12.275,21.689c5.808,6.475,12.703,9.713,20.701,9.713c7.996,0,14.896-3.244,20.699-9.713
+											c5.804-6.468,9.897-13.698,12.275-21.689c2.38-8.001,3.571-15.804,3.571-23.414c0-7.611-1.188-15.42-3.571-23.422
+											C176.771,279.226,172.682,271.994,166.875,265.52z"/>
+										<path d="M349.601,265.52c-5.804-6.475-12.703-9.712-20.697-9.712c-7.991,0-14.894,3.241-20.701,9.712
+											c-5.804,6.468-9.896,13.703-12.271,21.689c-2.385,8.002-3.576,15.804-3.576,23.422c0,7.61,1.191,15.413,3.576,23.414
+											c2.375,7.991,6.468,15.222,12.271,21.689c5.808,6.475,12.71,9.713,20.701,9.713c7.994,0,14.894-3.244,20.697-9.713
+											c5.801-6.468,9.896-13.698,12.278-21.689c2.379-8.001,3.569-15.804,3.569-23.414c0-7.611-1.19-15.42-3.569-23.422
+											C359.498,279.226,355.402,271.994,349.601,265.52z"/>
+									</g>
+								</svg>
+							</a>
+							<span class="elemento-lista-lateral">Pugli87</span>
+						</li>
+						<li class="features__item">
+							<a class="features__svg" href="#">
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									xmlns:xlink="http://www.w3.org/1999/xlink" 
+									width="15px" 
+									height="15px" 
+									viewBox="0 0 66.135 66.135" 
+									style="enable-background:new 0 0 66.135 66.135;"
+									xml:space="preserve">
+									<g>
+										<path d="M33.066,66.135C14.833,66.135,0,51.301,0,33.068C0,14.834,14.833,0,33.066,0s33.068,14.834,33.068,33.068
+											C66.135,51.301,51.3,66.135,33.066,66.135z M33.066,4C17.04,4,4,17.04,4,33.068S17.04,62.135,33.066,62.135
+											s29.068-13.04,29.068-29.067S49.094,4,33.066,4z"/>
+										<path d="M43.979,29.115c0-6.981-4.886-12.64-10.912-12.64c-6.025,0-10.91,5.658-10.91,12.64c0,0-1.154,6.57,10.91,20.546
+											C45.132,35.686,43.979,29.115,43.979,29.115z M33.066,31.816c-2.416,0-4.375-1.959-4.375-4.375c0-2.417,1.959-4.376,4.375-4.376
+											c2.417,0,4.375,1.959,4.375,4.376C37.442,29.857,35.483,31.816,33.066,31.816z"/>
+									</g>
+								</svg>
+							</a>
+							<span class="elemento-lista-lateral">Bogotá - Colombia</span>
+						</li>  
+					</ul>
+
+				</div>
+				<!-- Habilidades tecnicas -->
+				<div class="features__tech-skill">
+					<h3 class="features__tytle">Habilidades Tecnicas</h3>
+					<ul class="lista-lateral">
+						<li class="features__skill"><span class="elemento-lista-lateral">HTML5</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">CSS3</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">SASS</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">JavaScript</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">React Hooks & Components</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">GitHUB</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Parsel</span></li>   
+					</ul>
+				</div>
+				<!-- Habilidades Blandas  -->
+				<div class="features__soft-skill">
+					<h3 class="features__tytle">Habilidades Blandas</h3>
+					<ul class="lista-lateral">
+						<li class="features__skill"><span class="elemento-lista-lateral">Trabajo en equipo</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Comunicativo</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Autodidacta</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Comprometido</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Honesto</span></li>
+						<li class="features__skill"><span class="elemento-lista-lateral">Organizado</span></li>
+					</ul>
+				</div>
+				<div class="features__languages">
+					<h3 class="features__tytle">Idiomas</h3>
+					<ul class="lista-lateral">
+						<li><span class="elemento-lista-lateral">Español - nativo</span></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Informacion general -->
+			<section class="informacion-general contain__info">
+				<!-- Descripcion -->
+				<div class="descripcion">
+					<h2 class="descripcion-profesion"> Front-End Developer</h2>
+					<h1 class="nombre">Carlos Pugliese</h1>
+					<p class="texto-descripcion">
+						Perfil Operativo capaz de concebir nuevas alternativas con eficiencia 
+						para adquirir nuevos conocimientos en el campo laboral en diferentes áreas funcionales,
+						con la capacidad de desarrollar cualquier cargo en el ámbito de sistemas, con excelentes 
+						valores como la honestidad, moralidad, responsabilidad, solidaridad.  
+					</p>
+				</div>
+				<!-- Proyectos -->
+				<div class="proyectos">
+					<h3 class="titulo-seccion-principal">Proyectos</h3>
+						<ol class="lista-proyectos"> <!--Etiqueta de lista ordenada-->
+							<li> 
+								<a 
+								class="enlace-proyectos" 
+								href="https://barbershop.goit.global/">
+								https://barbershop.goit.global/ 
+							</a> 
+							<span class="puntos-proyectos">..... </span>
+							<span>[ HTML5, CSS3 ]</span> <!--span= dar estilo a una fuente-->
+							</li>
+							<li> 
+								<a 
+									class="enlace-proyectos" 
+									href="https://cryptohub.goit.global/">
+									https://cryptohub.goit.global/ 
+								</a>	
+								<span class="puntos-proyectos">...... </span>
+								<span>[ JavaScript ]</span>
+							</li>
+							<li> 
+								<a 
+									class="enlace-proyectos" 
+									href="https://kidslike.goit.global/"> 
+									https://kidslike.goit.global/ 
+								</a> 
+								<span class="puntos-proyectos">......... </span>
+								<span>[ React.js, Node.js ]</span> 
+							</li>
+						</ol>
+				</div>
+				<!-- Experiencia laboral -->
+				<div class="experiencia-laboral">
+					<h3 class="titulo-seccion-principal">Experiencia laboral</h3>
+					<!-- Experiencia 1 -->
+					<div  class="experiencia-1">
+						<h4 class="puesto-empresa">Técnico instalador - 
+							<span class="texto-naranja">Applus Norcontrol </span>
+						</h4>
+						<p class="periodo-experiencia">Diciembre 2014 - Febrero 2015   |   Colombia</p>
+						<ul class="lista-experiencia"> <!--Etiqueta lista no ordenada-->
+							<li>
+								Hacer diseños de enrutamiento de la fibra optica a nivel nacional. 
+							</li>
+							<li>
+								ir al sitio y verificar que la infraestructura sea apta para el uso.
+							</li>  
+							<li>
+								realizar diseño de ruta interior del sitio de instalacion. 
+							</li>
+							<li>
+								Validar informacion suministrada por el cliente. 
+							</li>
+						</ul>          
+					</div>
+					<!-- Experiencia 2 -->
+					<div>
+						<h4 class="puesto-empresa">Técnico instalador - 
+							<span class="texto-naranja">Applus Norcontrol</span>
+						</h4>
+						<p class="periodo-experiencia">Marzo 2015 - Abril 2016   |   Barranquilla</p>
+						<ul class="lista-experiencia">
+							<li>
+								Verificar diseños de enrutamiento de la fibra optica y coaxual en barranquilla. 
+							</li>
+							<li>
+								ir al sitio y verificar que la infraestructura sea apta para el uso.
+							</li>  
+							<li>
+								Verificar diseño de ruta al exterior e interior del sitio de instalacion. 
+							</li>
+							<li>
+								Verificar estado de la infraestructura 
+							</li>
+						</ul>          
+					</div>
+					<!-- Experiencia 3 -->
+					<div>
+						<h4 class="puesto-empresa">Tecnico en redes de computo y camaras -  
+							<span class="texto-naranja">Soluciones Pugliese</span>
+						</h4>
+						<p class="periodo-experiencia">enero 2018 - Hasta ahora  |   Bogotá</p>
+						<ul class="lista-experiencia">
+							<li>Ensable y mantenimiento de computadoras y servidores.</li>
+							<li>Instalacion de sistemas Operativos.</li>
+							<li>Instalacion y verificacion de redes de ofimatica.</li>
+							<li>instalacion y mantenimientos de sistemas de camaras </li>
+						</ul>
+					</div>
+				</div>
+				<!-- Educacion -->
+				<div>
+					<!-- Estudio 1 -->
+					<h3 class="titulo-seccion-principal"> Educacion</h3>
+					<div>
+						<h4 class="nombre-universidad">
+							<span class="texto-naranja">Universidad Autonoma del caribe</span> 
+						</h4>
+						<h5 class="nombre-carrera">Ingenieria electronica</h5>
+						<p class="periodo-experiencia">Junio 2006 - Diciembre 2006   |   Barranquilla</p>
+					</div>
+					<!-- Estudio 2 -->
+					<div>
+						<h4 class="nombre-universidad">
+							<span class="texto-naranja">Coorporacion Universitaria Americana</span> 
+						</h4>
+						<h5 class="nombre-carrera">Ingenieria de sistemas </h5>
+						<p class="periodo-experiencia">Enero 2014 - Junio 2016   |   Barranquilla</p>
+					</div>
+					<!-- Estudio 3 -->
+					<div>
+						<h4 class="nombre-universidad"><span class="texto-naranja">GoIT</span> </h4>
+						<h5 class="nombre-carrera">Desarrollo web fullstack </h5>
+						<p class="periodo-experiencia">Mayo 2022 - Octubre 2022   |   Bogotá</p>
+					</div>
+				</div>
+			</section>
+
+		</div> 
+	</body>
 </html>
