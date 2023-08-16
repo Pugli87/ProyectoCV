@@ -5,8 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mi hoja de vida</title>
-		<link rel="stylesheet" href="css/styles.css"> <!-- coneccion entre hoja de estilo y el codigo-->
-		<link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"> <!-- coneccion entre hoja de estilo y el codigo-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="body">
 		<!-- contenedor principal  -->
@@ -14,15 +16,15 @@
 			<!-- Informaion secundaria -->
 			<section class="contain__contact features"> <!--Contenedor contenido secundario a un lado-->
 				
-				<div class="feature__cont-img">
+				<div class="features__cont-img">
           <img class="features__img" src="./Imagenes/IMG-20190728-WA0005.jpg" alt="Mi foto de perfil" > 
         </div>
 
 				<!-- Contactos -->
-				<div class="features__contacts">
-					<h3 class="features__tytle"> Contactos </h3>					
-					<ul class="lista-lateral ">
-						<li class="features__item">
+				<div class="features__contacts contacts">
+					<h3 class="contacts__tytle"> Contactos </h3>					
+					<ul class="lista-lateral contacts__li">
+						<li class="contacts__item">
 							<svg 
 								xmlns="http://www.w3.org/2000/svg" 
 								xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -42,7 +44,7 @@
 
 							<span class="elemento-lista-lateral">+57 301 255 14 99</span>
 						</li>
-						<li class="features__item">
+						<li class="contacts__item">
 							<svg 
 								xmlns="http://www.w3.org/2000/svg" 
 								xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -76,8 +78,8 @@
 							</svg>
 							<span class="elemento-lista-lateral">Pugliese8725@gmail.com</span>
 						</li>
-						<li class="features__item">
-							<a class="features__svg" href="https://www.linkedin.com/in/carlos-pugliese-7ab33a148/">
+						<li class="contacts__item">
+							<a class="contacts__svg" target="_blank"href="https://www.linkedin.com/in/carlos-pugliese-7ab33a148/">
 								<svg 
 									enable-background="new 0 0 512 512" 
 									viewBox="0 0 512 512" 
@@ -95,8 +97,8 @@
 							</a>
 							<span class="elemento-lista-lateral">carlos-pugliese</span>
 						</li>
-						<li class="features__item">
-							<a class="features__svg" href="https://github.com/Pugli87">
+						<li class="contacts__item">
+							<a class="contacts__svg" target="_blank" href="https://github.com/Pugli87">
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -138,8 +140,8 @@
 							</a>
 							<span class="elemento-lista-lateral">Pugli87</span>
 						</li>
-						<li class="features__item">
-							<a class="features__svg" href="#">
+						<li class="contacts__item">
+							<a class="contacts__svg" target="_blank" href="https://www.bing.com/maps?osid=3f35e59f-2526-4f26-93c6-a01cfdd701f3&cp=4.652805~-74.11331&lvl=12&v=2&sV=2&form=S00027">
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -161,20 +163,30 @@
 							<span class="elemento-lista-lateral">Bogotá - Colombia</span>
 						</li>  
 					</ul>
-
 				</div>
 
 				<!-- Habilidades tecnicas -->
 				<div class="features__tech-skill">
 					<h3 class="features__tytle">Habilidades Tecnicas</h3>
 					<ul class="lista-lateral">
-						<li class="features__skill"><span class="elemento-lista-lateral">HTML5</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">CSS3</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">SASS</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">JavaScript</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">React Hooks & Components</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">GitHUB</span></li>
-						<li class="features__skill"><span class="elemento-lista-lateral">Parsel</span></li>   
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">HTML5</span>
+						</li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">CSS3</span>
+						</li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">SASS</span>
+						</li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">JavaScript</span>
+						</li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">React Hooks & Components</span></li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">GitHUB</span></li>
+						<li class="features__skill">
+							<span class="elemento-lista-lateral">Parsel</span></li>   
 					</ul>
 				</div>
 

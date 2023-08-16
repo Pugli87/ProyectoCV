@@ -63,7 +63,6 @@ a{
 .features__contacts{
   padding: 20px 0;
   border-bottom: 1px solid white;
-  
 }
 
 .feature__cont-img{
@@ -80,14 +79,15 @@ a{
   border-radius: 50%;;
 }
 
-.features__tytle{
+.contacts__tytle{
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
 }
 
-.features__item{
+.contacts__item{
   margin-left: 0;
   padding: 0;
   list-style: none;
@@ -134,10 +134,9 @@ margin-right: 5px;
   margin-left: 30px;
 }
 
-.features__svg{
+.contacts__svg{
   fill: white;
   cursor: pointer;
-  margin-right: 15px;
 }
 
 .elemento-lista-lateral{
@@ -145,6 +144,7 @@ margin-right: 5px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 15px;
 }
 
 .features__skill{
