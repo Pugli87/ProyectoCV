@@ -34,20 +34,23 @@ a{
 .contain{
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: row;
   background-color: white;
-  width: 1200px;
+  width: 1280px;
   margin: 40px auto;
   margin-top: 19px;
   margin-bottom: 25px;
   border: 40px solid #F5F7FA; 
 
   &__contact{
-    width: 320px;
+    width: 30%;
     padding: 0 20px;
     background-color: #6B0224;   
-
     border-bottom: 1px solid white;
+  }
+
+  &__info{
+    width: 70%;
+    padding: 15px;  
   }
 }
 
@@ -56,29 +59,11 @@ a{
 /* ----------------- Informacion lateral ----------------- */
 /* ------------------------------------------------------- */
 
- /* ---------------- */
- /* seccion de lista */
- /* ---------------- */
-
-
-
-
-.elemento-lista-lateral{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  margin-left: 15px;
-}
-
-
-
 .features{
   color: white;
-  fill: white;
 
   &__cont-img{
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid white;
   }  
   
@@ -91,18 +76,15 @@ a{
   }
 
   &__contacts{
-    padding: 20px 0;
-    border-bottom: 1px solid white;
+    @extend .features__cont-img;
   }
 
   &__tech-skill{
-    padding: 20px 0;
-    border-bottom: 1px solid white;
+    @extend .features__cont-img;
   }
   
   &__soft-skill{
-    padding: 20px 0;
-    border-bottom: 1px solid white;
+    @extend .features__cont-img;
   }
   
   &__languages{
@@ -114,75 +96,141 @@ a{
   }
 }
 
-.features__skill{
-  margin-left: 30px;
-}
-
-/* ------------------ */
-/* seccion contactos */
-/* ----------------- */
 .contacts{
-  &__svg{
-  fill: white;
-  cursor: pointer;
-  }
 
-  &__tytle{
+  &__title{
     margin-bottom: 15px;
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
   }
 
   &__item{
-    margin-left: 0;
+    display: flex;
     padding: 0;
     list-style: none;
+  }  
+
+  &__link{
+    cursor: pointer;
+  }
+  
+  &__svg{
+    margin-right: 15px;
+    fill: white;
+  }
+
+  &__paragraph{
+    line-height: 24px;
+    margin-left: 15px;
   }
 }
 
+.tech-skill{
+  &__title{
+    @extend .contacts__title;
+  }
 
+  &__item{
+    margin-left: 30px;
+  }
+  
+  &__paragraph{
+    @extend .contacts__paragraph;
+  }
 
-.tipo-contactos{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  margin-right: 5px;
+  
 }
 
-.contacto-info{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.soft-skill{
+  &__title{
+    @extend .contacts__title;
+  }
+
+  &__item{
+    margin-left: 30px;
+  }
+  
+  &__paragraph{
+    @extend .contacts__paragraph;
+  }
+  
+}
+
+.languages{
+  &__title{
+    @extend .contacts__title;
+  }
+
+  &__item{
+    margin-left: 30px;
+  }
+  
+  &__paragraph{
+    @extend .contacts__paragraph;
+  }
+  
 }
 
 /* --------------------------------------------------------------- */
 /* --------------------- Informacion general --------------------- */
 /* --------------------------------------------------------------- */
 
-.contain__info{
-  padding: 100px 88px;  
-}
-
 /* ------------------- */
 /* Descripcion*/
 /* ------------------- */
 
-.nombre{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
+.header{
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid #6B0224;
+
+  &__name{
+    color: #6B0224;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    font-family: 'Tilt Prism';
+    font-style: italic;
+    letter-spacing: 14px;
+    
+  }
+
+  &__profession{
+    margin-top: -5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 5px;
+  }
 }
-.texto-descripcion{
-  width: 360px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+
+.description{
+  border-bottom: 2px solid #6B0224;
+  padding: 20px 0;
+  &__title{
+    margin-bottom: 10px ;
+    color: #6B0224;
+  }
+  &__item{
+    list-style: none;
+  }
+  &__paragraph{
+    margin-bottom: 10px;
+    &--ls{
+      margin-left: 20px;
+
+    }
+  }
+  &__span{
+    font-weight: 700;
+  }
 }
 
 .descripcion-profesion{
