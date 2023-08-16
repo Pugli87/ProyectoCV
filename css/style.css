@@ -32,41 +32,32 @@ a {
 .contain {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: row;
   background-color: white;
-  width: 1200px;
+  width: 1280px;
   margin: 40px auto;
   margin-top: 19px;
   margin-bottom: 25px;
   border: 40px solid #F5F7FA;
 }
 .contain__contact {
-  width: 320px;
+  width: 30%;
   padding: 0 20px;
   background-color: #6B0224;
   border-bottom: 1px solid white;
+}
+.contain__info {
+  width: 70%;
+  padding: 15px;
 }
 
 /* ------------------------------------------------------- */
 /* ----------------- Informacion lateral ----------------- */
 /* ------------------------------------------------------- */
-/* ---------------- */
-/* seccion de lista */
-/* ---------------- */
-.elemento-lista-lateral {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  margin-left: 15px;
-}
-
 .features {
   color: white;
-  fill: white;
 }
-.features__cont-img {
-  padding: 20px;
+.features__cont-img, .features__soft-skill, .features__tech-skill, .features__contacts {
+  padding: 20px 0;
   border-bottom: 1px solid white;
 }
 .features__img {
@@ -76,18 +67,6 @@ a {
   display: flex;
   border-radius: 50%;
 }
-.features__contacts {
-  padding: 20px 0;
-  border-bottom: 1px solid white;
-}
-.features__tech-skill {
-  padding: 20px 0;
-  border-bottom: 1px solid white;
-}
-.features__soft-skill {
-  padding: 20px 0;
-  border-bottom: 1px solid white;
-}
 .features__languages {
   padding: 20px 0;
 }
@@ -95,68 +74,91 @@ a {
   margin-left: 30px;
 }
 
-.features__skill {
-  margin-left: 30px;
-}
-
-/* ------------------ */
-/* seccion contactos */
-/* ----------------- */
-.contacts__svg {
-  fill: white;
-  cursor: pointer;
-}
-.contacts__tytle {
+.contacts__title, .languages__title, .soft-skill__title, .tech-skill__title {
   margin-bottom: 15px;
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
 }
 .contacts__item {
-  margin-left: 0;
+  display: flex;
   padding: 0;
   list-style: none;
 }
-
-.tipo-contactos {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+.contacts__link {
+  cursor: pointer;
+}
+.contacts__svg {
+  margin-right: 15px;
+  fill: white;
+}
+.contacts__paragraph, .languages__paragraph, .soft-skill__paragraph, .tech-skill__paragraph {
   line-height: 24px;
-  margin-right: 5px;
+  margin-left: 15px;
 }
 
-.contacto-info {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.tech-skill__item {
+  margin-left: 30px;
 }
-
+.soft-skill__item {
+  margin-left: 30px;
+}
+.languages__item {
+  margin-left: 30px;
+}
 /* --------------------------------------------------------------- */
 /* --------------------- Informacion general --------------------- */
 /* --------------------------------------------------------------- */
-.contain__info {
-  padding: 100px 88px;
-}
-
 /* ------------------- */
 /* Descripcion*/
 /* ------------------- */
-.nombre {
+.header {
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid #6B0224;
+}
+.header__name {
+  color: #6B0224;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
+  font-family: "Tilt Prism";
+  font-style: italic;
+  letter-spacing: 14px;
 }
-
-.texto-descripcion {
-  width: 360px;
+.header__profession {
+  margin-top: -5px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
+  letter-spacing: 5px;
+}
+
+.description {
+  border-bottom: 2px solid #6B0224;
+  padding: 20px 0;
+}
+.description__title {
+  margin-bottom: 10px;
+  color: #6B0224;
+}
+.description__item {
+  list-style: none;
+}
+.description__paragraph {
+  margin-bottom: 10px;
+}
+.description__paragraph--ls {
+  margin-left: 20px;
+}
+.description__span {
+  font-weight: 700;
 }
 
 .descripcion-profesion {
