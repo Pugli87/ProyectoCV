@@ -280,19 +280,48 @@
       <!-- Informacion general -->
       <section class="contain__info">
         <header class="header">
-          <h1 class="header__name">Carlos Pugliese</h1>
-          <p class="header__profession">Front-End Developer</p>
+          <div class="header__cont">
+            <h1 class="header__name">Carlos Pugliese</h1>
+            <p class="header__profession">Front-End Developer</p>
+          </div>
+          <div class="header__cont header__cont--svg">
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-html5"></use>
+            </svg>
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-css3"></use>
+            </svg>
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-sass"></use>
+            </svg>
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-node-dot-js"></use>
+            </svg>
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-react"></use>
+            </svg>
+            <svg class="header__svg" width="17px" height="17px">
+              <use href="./imagenes/icons.svg#icon-github"></use>
+            </svg>
+          </div>
+          
         </header>
         <!-- Descripcion -->
         <div class="description">
           <h2 class="description__title">resumen</h2>
+
           <p class="description__paragraph">
-            Soy un apasionado desarrollador web con experiencia en una variedad
-            de tecnologías modernas de frontend y una fuerte dedicación para
-            crear experiencias en línea atractivas y funcionales. Mi enfoque se
-            centra en la construcción de interfaces de usuario atractivas y
-            responsivas que ofrecen una experiencia excepcional para los
-            usuarios. <!--Tengo una sólida base en tecnologías clave, que incluyen: -->
+            Soy desarrollador Front-end, actualmente me encuentro 
+            reforzando mis conocimientos como desarrollador full stack, 
+            soy un fanático del desarrollo de software y me gusta adquirir 
+            nuevos conocimientos, con el objetivo de implementar soluciones 
+            más eficaces. Implemento el aprendizaje diario como objetivo 
+            primario, para mejorar e innovar, y por ello estoy en constante 
+            práctica e indagación para lograrlo. Me destaco con capacidades 
+            de liderazgo, demostrando compromiso, responsabilidad, 
+            comunicación, flexibilidad, creatividad y buen trabajo en equipo 
+            sobre los proyectos a llevar a cabo.
+            <!--Tengo una sólida base en tecnologías clave, que incluyen: -->
           </p>
           <!-- <ul class="description__list">
             <li class="description__item">
@@ -363,51 +392,51 @@
         </div>
 
         <!-- Proyectos -->
-        <div class="proyectos">
-          <h3 class="titulo-seccion-principal">Proyectos</h3>
-          <ol class="lista-proyectos">
+        <div class="projects">
+          <h2 class="projects__title">Proyectos</h2>
+          <ol class="projects__list">
             <!--Etiqueta de lista ordenada-->
-            <li>
+            <li class="projects__item">
               <a
-                class="enlace-proyectos"
+                class="projects__link"
                 href="https://barbershop.goit.global/"
               >
                 https://barbershop.goit.global/
               </a>
-              <span class="puntos-proyectos">..... </span>
+              <span class="projects__span">..... </span>
               <span>[ HTML5, CSS3 ]</span>
               <!--span= dar estilo a una fuente-->
             </li>
-            <li>
-              <a class="enlace-proyectos" href="https://cryptohub.goit.global/">
+            <li class="projects__item">
+              <a class="projects__link" href="https://cryptohub.goit.global/">
                 https://cryptohub.goit.global/
               </a>
-              <span class="puntos-proyectos">...... </span>
+              <span class="projects__span">...... </span>
               <span>[ JavaScript ]</span>
             </li>
-            <li>
-              <a class="enlace-proyectos" href="https://kidslike.goit.global/">
+            <li class="projects__item">
+              <a class="projects__link" href="https://kidslike.goit.global/">
                 https://kidslike.goit.global/
               </a>
-              <span class="puntos-proyectos">......... </span>
+              <span class="projects__span">......... </span>
               <span>[ React.js, Node.js ]</span>
             </li>
           </ol>
         </div>
 
         <!-- Experiencia laboral -->
-        <div class="experiencia-laboral">
-          <h3 class="titulo-seccion-principal">Experiencia laboral</h3>
+        <div class="experience">
+          <h2 class="experience__title">Experiencia laboral</h2>
           <!-- Experiencia 1 -->
           <div class="experiencia-1">
-            <h4 class="puesto-empresa">
+            <h4 class="experience__charge">
               Técnico instalador -
-              <span class="texto-naranja">Applus Norcontrol </span>
+              <span class="experience__span">Applus Norcontrol </span>
             </h4>
-            <p class="periodo-experiencia">
+            <p class="experience__paragraph">
               Diciembre 2014 - Febrero 2015 | Colombia
             </p>
-            <ul class="lista-experiencia">
+            <ol class="experience__list">
               <!--Etiqueta lista no ordenada-->
               <li>
                 Hacer diseños de enrutamiento de la fibra optica a nivel
@@ -421,18 +450,18 @@
                 realizar diseño de ruta interior del sitio de instalacion.
               </li>
               <li>Validar informacion suministrada por el cliente.</li>
-            </ul>
+            </ol>
           </div>
           <!-- Experiencia 2 -->
           <div>
-            <h4 class="puesto-empresa">
+            <h4 class="experience__charge">
               Técnico instalador -
-              <span class="texto-naranja">Applus Norcontrol</span>
+              <span class="experience__span">Applus Norcontrol</span>
             </h4>
-            <p class="periodo-experiencia">
+            <p class="experience__paragraph">
               Marzo 2015 - Abril 2016 | Barranquilla
             </p>
-            <ul class="lista-experiencia">
+            <ol class="experience__list">
               <li>
                 Verificar diseños de enrutamiento de la fibra optica y coaxual
                 en barranquilla.
@@ -446,56 +475,45 @@
                 instalacion.
               </li>
               <li>Verificar estado de la infraestructura</li>
-            </ul>
+            </ol>
           </div>
           <!-- Experiencia 3 -->
           <div>
-            <h4 class="puesto-empresa">
+            <h4 class="experience__charge">
               Tecnico en redes de computo y camaras -
-              <span class="texto-naranja">Soluciones Pugliese</span>
+              <span class="experience__span">Soluciones Pugliese</span>
             </h4>
-            <p class="periodo-experiencia">enero 2018 - Hasta ahora | Bogotá</p>
-            <ul class="lista-experiencia">
+            <p class="experience__paragraph">enero 2018 - Hasta ahora | Bogotá</p>
+            <ol class="experience__list">
               <li>Ensable y mantenimiento de computadoras y servidores.</li>
               <li>Instalacion de sistemas Operativos.</li>
               <li>Instalacion y verificacion de redes de ofimatica.</li>
               <li>instalacion y mantenimientos de sistemas de camaras</li>
-            </ul>
+            </ol>
           </div>
         </div>
 
-        <!-- Educacion -->
-        <div>
+        <!-- Estudios -->
+        <div class="study">
+          <h2 class="study__title">Datos academicos</h2>
           <!-- Estudio 1 -->
-          <h3 class="titulo-seccion-principal">Educacion</h3>
-          <div>
-            <h4 class="nombre-universidad">
-              <span class="texto-naranja">Universidad Autonoma del caribe</span>
-            </h4>
-            <h5 class="nombre-carrera">Ingenieria electronica</h5>
-            <p class="periodo-experiencia">
-              Junio 2006 - Diciembre 2006 | Barranquilla
-            </p>
-          </div>
-          <!-- Estudio 2 -->
-          <div>
-            <h4 class="nombre-universidad">
-              <span class="texto-naranja"
-                >Coorporacion Universitaria Americana</span
+          <div class="study__cont">
+            <h4 class="study__university">
+              <span>Coorporacion Universitaria Americana</span
               >
             </h4>
-            <h5 class="nombre-carrera">Ingenieria de sistemas</h5>
-            <p class="periodo-experiencia">
+            <h5 class="study__professional">Ingenieria de sistemas</h5>
+            <p class="study__paragraph">
               Enero 2014 - Junio 2016 | Barranquilla
             </p>
-          </div>
-          <!-- Estudio 3 -->
+          </div class="study__cont">
+          <!-- Estudio 2 -->
           <div>
-            <h4 class="nombre-universidad">
-              <span class="texto-naranja">GoIT</span>
+            <h4 class="study__university">
+              <span>GoIT</span>
             </h4>
-            <h5 class="nombre-carrera">Desarrollo web fullstack</h5>
-            <p class="periodo-experiencia">Mayo 2022 - Octubre 2022 | Bogotá</p>
+            <h5 class="study__professional">Desarrollo web fullstack</h5>
+            <p class="study__paragraph">Mayo 2022 - Octubre 2022 | Bogotá</p>
           </div>
         </div>
       </section>

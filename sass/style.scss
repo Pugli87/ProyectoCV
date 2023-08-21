@@ -1,3 +1,8 @@
+$primaryColor: #fff;
+$secundColor: #6B0224;
+$backgroundColor: #F5F7FA;
+$boxShadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+$grayColor: #595959;
 
 *,
 *::before,
@@ -8,8 +13,9 @@
 }
 
 .body{
+  font-size: 14px;
   margin: 40px auto;
-  background-color: #E5E5E5;;
+  background-color: $backgroundColor;
   font-family: 'Montserrat','Arial';  
 }
 
@@ -32,39 +38,38 @@ a{
 /* ------------------------------------------------------ */
 
 .contain{
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: $boxShadow;
   display: flex;
-  background-color: white;
+  background-color: $primaryColor;
   width: 1280px;
   margin: 40px auto;
   margin-top: 19px;
   margin-bottom: 25px;
-  border: 40px solid #F5F7FA; 
+  border: 40px solid $backgroundColor; 
 
   &__contact{
-    width: 30%;
+    width: 25%;
     padding: 0 20px;
-    background-color: #6B0224;   
-    border-bottom: 1px solid white;
+    background-color: $secundColor;   
+    border-bottom: 1px solid $primaryColor;
   }
 
   &__info{
-    width: 70%;
+    width: 75%;
     padding: 15px;  
   }
 }
-
 
 /* ------------------------------------------------------- */
 /* ----------------- Informacion lateral ----------------- */
 /* ------------------------------------------------------- */
 
 .features{
-  color: white;
+  color: $primaryColor;
 
   &__cont-img{
     padding: 20px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $primaryColor;
   }  
   
   &__img{
@@ -117,7 +122,7 @@ a{
   
   &__svg{
     margin-right: 15px;
-    fill: white;
+    fill: $primaryColor;
   }
 
   &__paragraph{
@@ -176,10 +181,6 @@ a{
 /* --------------------- Informacion general --------------------- */
 /* --------------------------------------------------------------- */
 
-/* ------------------- */
-/* Descripcion*/
-/* ------------------- */
-
 .header{
   display: flex;
   text-transform: uppercase;
@@ -187,18 +188,33 @@ a{
   justify-content: center;
   align-items: center;
   padding: 15px;
-  border-bottom: 2px solid #6B0224;
+  border-bottom: 2px solid $secundColor;
+
+  &__cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--svg{
+      flex-direction: row;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__svg{
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
 
   &__name{
-    color: #6B0224;
-    font-style: normal;
+    color: $secundColor;
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
     font-family: 'Tilt Prism';
     font-style: italic;
     letter-spacing: 14px;
-    
   }
 
   &__profession{
@@ -208,15 +224,16 @@ a{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 5px;
+    margin-bottom: 10px;
   }
 }
 
 .description{
-  border-bottom: 2px solid #6B0224;
-  padding: 20px 0;
+  border-bottom: 2px solid $secundColor;
+  padding: 10px 0;
   &__title{
     margin-bottom: 10px ;
-    color: #6B0224;
+    color: $secundColor;
   }
   &__item{
     list-style: none;
@@ -233,97 +250,100 @@ a{
   }
 }
 
-.descripcion-profesion{
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* Secciones Principales */
-
-.titulo-seccion-principal{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  margin-top: 45px;
-  margin-bottom: 8px;
-}
-
-.texto-naranja{
-  color: #FB6D3A;
-}
-.periodo-experiencia{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;  
-  color: #A8A8A8;
-} 
-
-
 /* Lista Proyectos */
+.projects{
+  border-bottom: 2px solid $secundColor;
+  padding: 10px 0;
 
+  &__title{
+    @extend .description__title;
+  }
 
-.lista-proyectos {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 17px;
-}
-.enlace-proyectos{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-}
-.puntos-proyectos{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  color: #595959; 
+  &__list {
+    padding: 17px;
+  }
+
+  &__link{
+    font-weight: 400;
+    line-height: 24px;
+    color: $grayColor;
+    box-shadow: $boxShadow;
+  } 
+
+  &__span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $grayColor; 
+  }
 }
 
 /* Seccion experiencia-laboral */
-.puesto-empresa{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-top: 15px;
-}
+.experience{
+  border-bottom: 2px solid $secundColor;
+  padding: 10px 0;
 
-.lista-experiencia{
-  margin: 8px 0px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 0px 17px;
-}
+  &__title{
+    @extend .description__title;
+  }
 
-/* Seccion educacion */
-
-.nombre-universidad {
+  &__university{
   margin-left: 4px;
   margin-top: 20px;
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px; 
+  }
+
+  &__charge{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+
+  &__span{
+    color: $secundColor;
+  }
+  
+  &__professional{
+    margin: 8px 4px;
+    line-height: 17px;
+  }
+
+  &__paragraph{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;  
+    color: $grayColor;
+  }
+
+  &__list{
+    margin: 8px 0px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0px 17px;
+  }
 }
 
-.nombre-carrera{
-  margin: 8px 4px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+/* Seccion estudios */
+.study{
+  padding: 10px 0;
+  &__cont{
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  &__title{
+    @extend .description__title;
+  }
+  &__university{
+    color: #000;
+  }
+  &__professional{
+    color: $secundColor;
+
+  }
+  &__paragraph{
+    @extend .experience__paragraph
+  }
 }
-
-
-
